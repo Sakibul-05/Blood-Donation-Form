@@ -1,0 +1,108 @@
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+    font-family: 'Roboto', sans-serif;
+ 
+}
+
+#container{
+    /* border: 2px solid rgb(0, 0, 0); */
+    border-radius: 10px;
+    background: linear-gradient(-90deg, rgb(39, 198, 209), rgb(255, 255, 255));
+    width: 700px;
+    margin: 10px auto;
+    box-shadow: 5px 6px 10px rgb(141, 141, 141);
+}
+.heading{
+    /* border: 1px solid green; */
+    border-bottom: 5px double green;
+    text-align: center;
+}
+
+.heading span{
+    font-size: 30px;
+
+}
+.formElements div{
+    /* border: 2px solid black; */
+    margin: 10px;
+}
+.inputBox input{
+    width: 100%;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.inputBox input:focus{
+    border: 3px solid rgb(15, 198, 15);
+    outline: none;
+}
+ 
+#bloodGroupBox #bloodGroup{
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#user_email{
+    text-transform: lowercase;
+}
+#user_email::placeholder{
+    text-transform: capitalize;
+    /* color: rgb(15, 198, 15); */
+    /* font-size: 15px; */
+} 
+#bloodGroupBox #bloodGroup:focus{
+    border: 3px solid rgb(15, 198, 15);
+    outline: none;
+}
+textarea{
+    resize: none;
+    width: 100%;
+    height: 65px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+textarea:focus{
+    border: 3px solid rgb(15, 198, 15);
+    outline: none;
+}
+#btn{
+    width: 70px;
+    height: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgba(10, 198, 0, 0.935);
+    color: white;
+    margin: 10px;
+    font-size: 17px;
+    box-shadow: 2px 3px 7px rgb(117, 116, 116);
+    transition: 0.5s;
+}
+
+#btn:hover{
+    background-color: rgba(231, 51, 51, 0.935)
+}
+
+
+p:first-child{
+    font-weight:500;
+}
+ p:last-child{
+    font-size: 13px;
+    font-weight: 600;
+    font-style: italic;
+    /* border: 2px solid red; */
+    color: red;
+     
+ }

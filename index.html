@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blood Donation Form</title>
+    <!-- Linking CSS  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Linking Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Bree+Serif&family=Lobster&family=Michroma&family=Poppins:wght@300&family=Prompt&family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="container">     <!-- "container" starts--------- under "container" there are 2 div i.e. "heading" and "formElements" -->
+      <div class="heading">
+        <span>User Record List </span>
+      </div>
+      <div class="formElements">    <!-- "formElements" starts-------- under "formElements" there are 2 div i.e. "inputBox" and "submitBox" -->
+        <form action="backend.php">  <!-- here "backend.php" just an example -->
+          <div class="inputBox">    <!-- "inputBox" starts-------- under "inputBox" there are 6 div -->
+            <div id="userNameBox">  <!-- "userNameBox" starts -->
+              <p>Username:-</p>
+              <input
+                type="text"
+                name=""
+                id="userName"
+                placeholder="Enter Your Name"
+                required 
+              />
+              <p id="errorName"> </p>
+            </div>   <!-- "userNameBox" ends -->
+            <div id="emailBox">  <!-- "emailBox" starts -->
+              <p>Your Email Address:-</p>
+              <input
+                type="text"
+                name=""
+                id="user_email"
+                placeholder="Enter Your Email"
+                required 
+              />
+              <p id="errorEmail"> </p>
+            </div>  <!-- "emailBox" ends -->
+            <div id="phoneNoBox">  <!-- "phoneNoBox"  starts -->
+              <p>Enter Your Phone Number:-</p>
+              <input
+                type="text"
+                name=""
+                id="phoneNo"
+                placeholder="Enter Your Phone Number"
+                required 
+              />
+              <p id="errorPhNo"> </p>
+            </div>   <!-- "phoneNoBox"  ends -->
+            <div id="bloodGroupBox">   <!-- "bloodGroupBox" starts -->
+              <p>Select Your Blood Group:-</p>
+              <select name="" id="bloodGroup">
+                <option value="A+">A+</option>
+                <option value="B+">B+</option>
+                <option value="AB+">AB+</option>
+                <option value="O+" selected>O+</option>
+                <option value="A-">A-</option>
+                <option value="B-">B-</option>
+                <option value="AB-">AB-</option>
+                <option value="O-">O-</option>
+              </select>
+            </div>   <!-- "bloodGroupBox" ends -->
+            <div id="addressBox">   <!-- "addressBox" starts -->
+              <p>Enter Your Address:-</p>
+
+              <textarea name="" id="userAddress" cols="30" rows="10" placeholder="Type Your Address Here..." required></textarea>
+            </div>   <!-- "addressBox" ends -->
+
+            <div id="healthInfoBox">   <!-- "healthInfoBox" starts -->
+              <p>Any other details regarding your medical health:-</p>
+              <textarea name="" id="healthInfo" cols="30" rows="10" placeholder="Type Here About Your Medical Health..."></textarea>
+            </div>  <!-- "healthInfoBox" ends -->
+          </div>    <!-- "inputBox" ends -->
+          <div class="submitBox">   <!-- "submitBox" starts -->
+            <button type="submit" id="btn">Submit</button>
+          </div>    <!-- "submitBox" ends -->
+        </form>
+      </div>   <!-- "formElements" ends -->
+    </div>     <!-- "container" ends -->
+ 
+ 
+    <script src="/javaScript.js"></script>
+  </body>
+</html>
