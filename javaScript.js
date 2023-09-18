@@ -1,6 +1,14 @@
 let submitButton = document.getElementById('btn');
-submitButton.addEventListener("click", formValidation);    // Using "addEventListener" that means when user click on button then this "formValidation" function will execute
+let form = document.querySelector('form')
+form.addEventListener("submit", formHandler);    // Using "addEventListener" that means when user click on button then this "formHandler" function will execute
 
+
+function formHandler(event){
+    event.preventDefault();
+    if(formValidation()){
+        window.location.href = './success.html'
+    }
+}
 
  // function declearation
 function formValidation(){
@@ -16,14 +24,14 @@ function formValidation(){
 // condition implementation    
     if (userName_validation.test(userName)) {
         document.getElementById('errorName').innerHTML = " ";
-
+       
     }else{
         document.getElementById('errorName').innerHTML = "*Username is Invalid*" ;
         return false;
     }
     if (userEmail_validation.test(userEmail)) {
         document.getElementById('errorEmail').innerHTML = " ";
-
+        
     }else{
         document.getElementById('errorEmail').innerHTML = "*Email is Invalid*" ;
         return false;
@@ -35,6 +43,7 @@ function formValidation(){
         document.getElementById('errorPhNo').innerHTML = "*Phone number is Invalid*" ;
         return false;
     }
+    return true;
 }
  
 

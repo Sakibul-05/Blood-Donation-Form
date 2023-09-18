@@ -106,3 +106,44 @@ p:first-child{
     color: red;
      
  }
+
+
+
+
+ /* styles for success.html */
+ .succes-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+ }
+ .msg-container{
+    width: 320px;
+    height: 100px;
+    box-shadow: 5px 4px 10px lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    background-color: #e3ffed;
+    color: #12b76a;
+ }
+ .msg-container div{
+    display: flex;
+    align-items: center;
+ }
+ .msg-container div h2{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+ }
+ .msg-container div h2 span{
+    position: relative;
+    bottom: -2.5px;
+ }
+ .check-mark{
+    width: 32px;
+ }
